@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="52 132 1496 490" width="1496" height="490" font-family="'Barlow Semi Condensed','Barlow',sans-serif">
+<style>
+.tw-flow{fill:none;stroke:#FFFFFF;stroke-opacity:.8;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:14 22;animation:tw-dash 2.2s linear infinite}
+.tw-fan{animation:tw-spin 1.2s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes tw-dash{to{stroke-dashoffset:-72}}
+@keyframes tw-spin{to{transform:rotate(360deg)}}
+.tw-w{font:600 14px 'Barlow Semi Condensed','Barlow',sans-serif;fill:#FFFFFF}
+
+.vz-t{fill:#142019}.vz-sub{font:500 16px 'Barlow Semi Condensed','Barlow',sans-serif;fill:#47574D}
+.vz-lab{font:600 14px 'Barlow Semi Condensed','Barlow',sans-serif;fill:#142019}
+.vz-sm{font:500 13px 'Barlow Semi Condensed','Barlow',sans-serif;fill:#47574D}
+.vz-mono{font-family:ui-monospace,'Cascadia Mono',Consolas,monospace}
+@media (prefers-reduced-motion: reduce){.vz-anim{animation:none!important}}
+</style>
+<defs><linearGradient id="tw-cold" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#2C6FB7"/><stop offset="1" stop-color="#6FAEDC"/></linearGradient>
+<linearGradient id="tw-hot" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F0883E"/><stop offset="1" stop-color="#D3361F"/></linearGradient>
+<linearGradient id="tw-ceil" x1="0" x2="1"><stop offset="0" stop-color="#F0883E"/><stop offset=".5" stop-color="#D3361F"/><stop offset="1" stop-color="#F0883E"/></linearGradient>
+<linearGradient id="tw-room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F0883E"/><stop offset="1" stop-color="#F3D27A"/></linearGradient>
+<linearGradient id="tw-plen" x1="0" x2="1"><stop offset="0" stop-color="#2C6FB7"/><stop offset=".5" stop-color="#3F86C6"/><stop offset="1" stop-color="#2C6FB7"/></linearGradient>
+<linearGradient id="tw-rLR" x1="0" x2="1"><stop offset="0" stop-color="#6FAEDC"/><stop offset=".55" stop-color="#F3D27A"/><stop offset="1" stop-color="#D3361F"/></linearGradient>
+<linearGradient id="tw-rRL" x1="1" x2="0"><stop offset="0" stop-color="#6FAEDC"/><stop offset=".55" stop-color="#F3D27A"/><stop offset="1" stop-color="#D3361F"/></linearGradient>
+<linearGradient id="tw-bar" x1="0" x2="1"><stop offset="0" stop-color="#2C6FB7"/><stop offset=".25" stop-color="#6FAEDC"/><stop offset=".5" stop-color="#F3D27A"/><stop offset=".75" stop-color="#F0883E"/><stop offset="1" stop-color="#D3361F"/></linearGradient>
+<filter id="tw-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="14"/></filter>
+<clipPath id="tw-room-clip"><rect x="60" y="140" width="1480" height="460"/></clipPath></defs>
+<rect x="0" y="0" width="1600" height="760" fill="#F1F4EE"/><rect x="14" y="14" width="1572" height="732" fill="none" stroke="#142019" stroke-width="1.6"/>
+<text x="44" y="64" font-family="Michroma, Arial, sans-serif" font-size="24" class="vz-t">Digital twin: airflow and heat in a data hall</text>
+<text x="44" y="94" class="vz-sub">An illustrative cross-section of the physics a twin models. Colors show simulated air temperature; not real site data.</text>
+<g clip-path="url(#tw-room-clip)">
+<rect x="60" y="140" width="1480" height="460" fill="url(#tw-room)"/>
+<g filter="url(#tw-blur)">
+<rect x="60" y="140" width="1480" height="56" fill="url(#tw-ceil)"/>
+<rect x="400" y="270" width="160" height="270" fill="url(#tw-cold)"/>
+<rect x="1040" y="270" width="160" height="270" fill="url(#tw-cold)"/>
+<rect x="190" y="196" width="110" height="344" fill="url(#tw-hot)"/>
+<rect x="660" y="196" width="280" height="344" fill="url(#tw-hot)"/>
+<rect x="1300" y="196" width="110" height="344" fill="url(#tw-hot)"/>
+<rect x="60" y="540" width="1480" height="60" fill="url(#tw-plen)"/>
+</g>
+<rect x="60" y="540" width="1480" height="60" fill="url(#tw-plen)" opacity=".85"/>
+</g>
+<rect x="60" y="140" width="1480" height="460" fill="none" stroke="#142019" stroke-width="2"/>
+<path d="M60 196 H1540" stroke="#142019" stroke-width="2.5"/>
+<rect x="230" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="350" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="470" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="590" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="710" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="830" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="950" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="1070" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="1190" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<rect x="1310" y="193" width="44" height="6" fill="#F1F4EE" stroke="#142019" stroke-width="1"/>
+<path d="M60 540 H1540" stroke="#142019" stroke-width="2.5"/>
+<rect x="410" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="424" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="438" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="452" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="466" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="480" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="494" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="508" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="522" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="536" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1050" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1064" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1078" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1092" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1106" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1120" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1134" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1148" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1162" y="538" width="8" height="4" fill="#F1F4EE"/>
+<rect x="1176" y="538" width="8" height="4" fill="#F1F4EE"/>
+<path d="M100 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M180 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M260 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M340 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M420 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M500 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M580 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M660 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M740 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M820 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M900 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M980 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1060 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1140 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1220 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1300 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1380 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<path d="M1460 540 V600" stroke="#142019" stroke-width="1.4" opacity=".55"/>
+<rect x="60" y="600" width="1480" height="14" fill="#9AA39C" stroke="#142019" stroke-width="1.5"/>
+<rect x="300" y="280" width="100" height="260" fill="url(#tw-rRL)" opacity=".55"/>
+<rect x="300" y="280" width="100" height="260" fill="none" stroke="#142019" stroke-width="2.2"/>
+<rect x="308" y="290" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="299" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="315" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="324" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="340" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="349" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="365" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="374" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="390" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="399" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="415" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="424" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="440" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="449" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="465" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="474" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="490" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="499" r="2.2" fill="#8CF2A8"/>
+<rect x="308" y="515" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="384" cy="524" r="2.2" fill="#8CF2A8"/>
+<rect x="560" y="280" width="100" height="260" fill="url(#tw-rLR)" opacity=".55"/>
+<rect x="560" y="280" width="100" height="260" fill="none" stroke="#142019" stroke-width="2.2"/>
+<rect x="568" y="290" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="299" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="315" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="324" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="340" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="349" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="365" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="374" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="390" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="399" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="415" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="424" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="440" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="449" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="465" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="474" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="490" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="499" r="2.2" fill="#8CF2A8"/>
+<rect x="568" y="515" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="576" cy="524" r="2.2" fill="#8CF2A8"/>
+<rect x="940" y="280" width="100" height="260" fill="url(#tw-rRL)" opacity=".55"/>
+<rect x="940" y="280" width="100" height="260" fill="none" stroke="#142019" stroke-width="2.2"/>
+<rect x="948" y="290" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="299" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="315" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="324" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="340" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="349" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="365" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="374" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="390" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="399" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="415" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="424" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="440" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="449" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="465" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="474" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="490" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="499" r="2.2" fill="#8CF2A8"/>
+<rect x="948" y="515" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1024" cy="524" r="2.2" fill="#8CF2A8"/>
+<rect x="1200" y="280" width="100" height="260" fill="url(#tw-rLR)" opacity=".55"/>
+<rect x="1200" y="280" width="100" height="260" fill="none" stroke="#142019" stroke-width="2.2"/>
+<rect x="1208" y="290" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="299" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="315" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="324" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="340" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="349" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="365" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="374" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="390" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="399" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="415" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="424" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="440" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="449" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="465" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="474" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="490" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="499" r="2.2" fill="#8CF2A8"/>
+<rect x="1208" y="515" width="84" height="18" rx="2" fill="#1B2220" opacity=".78"/>
+<circle cx="1216" cy="524" r="2.2" fill="#8CF2A8"/>
+<rect x="300" y="268" width="360" height="12" fill="#D9DED8" stroke="#142019" stroke-width="1.6"/>
+<rect x="940" y="268" width="360" height="12" fill="#D9DED8" stroke="#142019" stroke-width="1.6"/>
+<rect x="70" y="290" width="120" height="250" rx="4" fill="#D9DED8" stroke="#142019" stroke-width="2.2"/>
+<rect x="80" y="300" width="100" height="40" fill="#B9C1BA" stroke="#47574D"/>
+<path d="M84 360 L84 360 L93 378 L102 360 L111 378 L120 360 L129 378 L138 360 L147 378 L156 360 L165 378 L174 360" fill="none" stroke="#2C6FB7" stroke-width="3"/>
+<path d="M84 400 L84 400 L93 418 L102 400 L111 418 L120 400 L129 418 L138 400 L147 418 L156 400 L165 418 L174 400" fill="none" stroke="#2C6FB7" stroke-width="3"/>
+<circle cx="130" cy="470" r="17" fill="#2E3A33"/>
+<g class="tw-fan vz-anim"><path d="M130 456 Q136 466 130 470 Q124 466 130 456Z M144 470 Q134 476 130 470 Q134 464 144 470Z M130 484 Q124 474 130 470 Q136 474 130 484Z M116 470 Q126 464 130 470 Q126 476 116 470Z" fill="#B9C1BA"/></g>
+<circle cx="130" cy="510" r="17" fill="#2E3A33"/>
+<g class="tw-fan vz-anim"><path d="M130 496 Q136 506 130 510 Q124 506 130 496Z M144 510 Q134 516 130 510 Q134 504 144 510Z M130 524 Q124 514 130 510 Q136 514 130 524Z M116 510 Q126 504 130 510 Q126 516 116 510Z" fill="#B9C1BA"/></g>
+<text x="130" y="325" text-anchor="middle" class="vz-lab">CRAH</text>
+<rect x="1410" y="290" width="120" height="250" rx="4" fill="#D9DED8" stroke="#142019" stroke-width="2.2"/>
+<rect x="1420" y="300" width="100" height="40" fill="#B9C1BA" stroke="#47574D"/>
+<path d="M1424 360 L1424 360 L1433 378 L1442 360 L1451 378 L1460 360 L1469 378 L1478 360 L1487 378 L1496 360 L1505 378 L1514 360" fill="none" stroke="#2C6FB7" stroke-width="3"/>
+<path d="M1424 400 L1424 400 L1433 418 L1442 400 L1451 418 L1460 400 L1469 418 L1478 400 L1487 418 L1496 400 L1505 418 L1514 400" fill="none" stroke="#2C6FB7" stroke-width="3"/>
+<circle cx="1470" cy="470" r="17" fill="#2E3A33"/>
+<g class="tw-fan vz-anim"><path d="M1470 456 Q1476 466 1470 470 Q1464 466 1470 456Z M1484 470 Q1474 476 1470 470 Q1474 464 1484 470Z M1470 484 Q1464 474 1470 470 Q1476 474 1470 484Z M1456 470 Q1466 464 1470 470 Q1466 476 1456 470Z" fill="#B9C1BA"/></g>
+<circle cx="1470" cy="510" r="17" fill="#2E3A33"/>
+<g class="tw-fan vz-anim"><path d="M1470 496 Q1476 506 1470 510 Q1464 506 1470 496Z M1484 510 Q1474 516 1470 510 Q1474 504 1484 510Z M1470 524 Q1464 514 1470 510 Q1476 514 1470 524Z M1456 510 Q1466 504 1470 510 Q1466 516 1456 510Z" fill="#B9C1BA"/></g>
+<text x="1470" y="325" text-anchor="middle" class="vz-lab">CRAH</text>
+<path class="tw-flow vz-anim" d="M120 545 L120.0 558.5 Q120 572 142.0 572.0 L433.0 572.0 Q455 572 455.0 550.0 L455.0 432.0 Q455 410 433.0 410.0 L267.0 410.0 Q245 410 245.0 388.0 L245.0 200.0 Q245 178 223.0 178.0 L142.0 178.0 Q120 178 120.0 200.0 L120 288" style="animation-delay:-0.0s"/>
+<path class="tw-flow vz-anim" d="M1480 545 L1480.0 558.5 Q1480 572 1458.0 572.0 L1167.0 572.0 Q1145 572 1145.0 550.0 L1145.0 432.0 Q1145 410 1167.0 410.0 L1333.0 410.0 Q1355 410 1355.0 388.0 L1355.0 200.0 Q1355 178 1377.0 178.0 L1458.0 178.0 Q1480 178 1480.0 200.0 L1480 288" style="animation-delay:-0.3s"/>
+<path class="tw-flow vz-anim" d="M150 545 L150.0 565.5 Q150 586 172.0 586.0 L478.0 586.0 Q500 586 500.0 564.0 L500.0 492.0 Q500 470 522.0 470.0 L723.0 470.0 Q745 470 745.0 448.0 L745.0 182.0 Q745 160 723.0 160.0 L172.0 160.0 Q150 160 150.0 182.0 L150 288" style="animation-delay:-0.7s"/>
+<path class="tw-flow vz-anim" d="M1450 545 L1450.0 565.5 Q1450 586 1428.0 586.0 L1122.0 586.0 Q1100 586 1100.0 564.0 L1100.0 492.0 Q1100 470 1078.0 470.0 L877.0 470.0 Q855 470 855.0 448.0 L855.0 182.0 Q855 160 877.0 160.0 L1428.0 160.0 Q1450 160 1450.0 182.0 L1450 288" style="animation-delay:-1.0s"/>
+<path class="tw-flow vz-anim" d="M95 545 L95.0 570.0 Q95 592 117.0 592.0 L408.0 592.0 Q430 592 430.0 570.0 L430.0 507.0 Q430 485 408.0 485.0 L292.0 485.0 Q270 485 270.0 463.0 L270.0 212.0 Q270 190 248.0 190.0 L117.0 190.0 Q95 190 95.0 212.0 L95 288" style="animation-delay:-1.4s"/>
+<path class="tw-flow vz-anim" d="M1505 545 L1505.0 570.0 Q1505 592 1483.0 592.0 L1192.0 592.0 Q1170 592 1170.0 570.0 L1170.0 507.0 Q1170 485 1192.0 485.0 L1308.0 485.0 Q1330 485 1330.0 463.0 L1330.0 212.0 Q1330 190 1352.0 190.0 L1483.0 190.0 Q1505 190 1505.0 212.0 L1505 288" style="animation-delay:-1.8s"/>
+<text x="480" y="300" text-anchor="middle" class="tw-w">COLD AISLE</text><text x="1120" y="300" text-anchor="middle" class="tw-w">COLD AISLE</text>
+<text x="800" y="250" text-anchor="middle" class="tw-w">HOT AISLE</text>
+<text x="800" y="186" text-anchor="middle" class="tw-w">CEILING RETURN PLENUM</text>
+<text x="800" y="576" text-anchor="middle" class="tw-w">RAISED-FLOOR SUPPLY PLENUM</text>
+<text x="350" y="262" text-anchor="middle" class="vz-lab" style="font-size:12px">RACK</text><text x="610" y="262" text-anchor="middle" class="vz-lab" style="font-size:12px">RACK</text><text x="990" y="262" text-anchor="middle" class="vz-lab" style="font-size:12px">RACK</text><text x="1250" y="262" text-anchor="middle" class="vz-lab" style="font-size:12px">RACK</text>
+<text x="60" y="654" class="vz-lab">Simulated air temperature</text>
+<rect x="60" y="664" width="360" height="14" fill="url(#tw-bar)" stroke="#142019" stroke-width="1"/>
+<text x="60" y="698" class="vz-sm">18 °C</text><text x="240" y="698" text-anchor="middle" class="vz-sm">30 °C</text><text x="420" y="698" text-anchor="end" class="vz-sm">45 °C</text>
+<path class="tw-flow" d="M470 671 H540" style="stroke:#142019;animation:none"/><text x="552" y="676" class="vz-sm">airflow</text>
+<text x="700" y="654" class="vz-lab">What the twin does with this</text><text x="700" y="676" class="vz-sm">Predicts rack inlet temperatures as load changes, and suggests CRAH supply</text><text x="700" y="694" class="vz-sm">setpoints. I evaluated ML and RL approaches for that predictive layer.</text>
+</svg>
