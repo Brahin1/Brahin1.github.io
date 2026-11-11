@@ -905,7 +905,7 @@ footer span:last-child{border-right:0}
     <ul class="did grid2">
       <li><span>I built the <b>asset map</b> for a deployed modular site: 716 electrical, mechanical, security and life-safety assets, each linked to the asset that feeds it, so the power path from substation to rack PDU can be walked without opening a drawing.</span></li>
       <li><span>I proposed a <b>five-level naming standard</b> for modular sites, adapted from a seven-level standard written for large buildings, and measured row by row how far the live SCADA tags sat from it.</span></li>
-      <li><span>I wrote a <b>Python tag parser</b> that flattens a nested SCADA tag export (JSON) into a CSV any engineer can open in Excel, with 23 unit tests and a plain-language guide for non-programmers.</span></li>
+      <li><span>I wrote a <b>Python tag parser</b> that flattens nested SCADA/MQTT telemetry tag exports (JSON) into a CSV any engineer can open in Excel, cutting on-site processing from hours to minutes, with 23 unit tests and a plain-language guide for non-programmers.</span></li>
       <li><span>I built a <b>commissioning scope-of-work RFP</b> for two new buildings of a GPU data center campus, and a validation matrix that checks equipment lists against the drawing schedules in both directions. It found 12 equipment types missing from the original lists.</span></li>
       <li><span>I evaluated <b>ML and reinforcement-learning approaches</b> for the predictive control layer of a data center digital twin, and modeled the cost of physics-only vs hybrid training.</span></li>
     </ul>
@@ -1402,11 +1402,13 @@ footer span:last-child{border-right:0}
         <h3>Data Center Facility Operations Intern</h3>
         <div class="org">Crusoe</div>
         <ul class="did">
-          <li><span>Built a <b>Python/JavaScript pipeline</b> that parsed raw BMS/EPMS telemetry JSON into clean, structured datasets, cutting on-site processing time from hours to minutes.</span></li>
-          <li><span>Evaluated <b>ML and reinforcement-learning approaches</b> for the predictive control layer of a closed-loop digital twin of a remote data center, and modeled cost tradeoffs between physics-only and hybrid physics+ML training pipelines.</span></li>
-          <li><span>Built the <b>CMMS asset hierarchy</b> for 700+ electrical and mechanical components and authored RFPs and MEP equipment lists, translating engineering drawings into buildable specifications.</span></li>
+          <li><span>Built a <b>Python tag parser</b> that flattens nested SCADA/MQTT telemetry tag exports (JSON) into clean CSV datasets, cutting on-site processing from hours to minutes; 23 unit tests.</span></li>
+          <li><span>Proposed a <b>five-level naming standard</b> for modular sites so maintenance records, SCADA tags and cloud dashboards share one name per asset, and measured the live SCADA tags against it.</span></li>
+          <li><span>Built the <b>asset map for 716</b> electrical, mechanical, security and life-safety assets, each linked to the asset that feeds it, from substation to rack PDU.</span></li>
+          <li><span>Wrote a <b>commissioning scope-of-work RFP</b> for two new GPU data center buildings and a validation matrix that found <b>12 equipment types missing</b> from the original equipment lists.</span></li>
+          <li><span>Evaluated <b>ML and reinforcement-learning approaches</b> for the predictive control layer of a closed-loop data center digital twin, and modeled cost tradeoffs between physics-only and hybrid physics+ML training.</span></li>
         </ul>
-        <div class="tags"><span>Python</span><span>SCADA</span><span>BMS/EPMS</span><span>CMMS</span><span>Digital twin</span><span>RFPs</span></div>
+        <div class="tags"><span>Python</span><span>MQTT</span><span>SCADA</span><span>BMS/EPMS</span><span>Asset mapping</span><span>Commissioning</span><span>Digital twin</span></div>
         <a class="more" href="#crusoe">See sheet DC1: drawings and details</a>
       </div>
       <figure class="exfig"><div class="frame"><img class="shot" src="assets/crusoe-twin-crop.svg" width="1496" height="490" alt="Thumbnail of the data hall airflow drawing: CRAH units, cold and hot aisles and server racks shaded by air temperature." loading="lazy" decoding="async"></div><figcaption>Fig. E1 · data hall airflow, from sheet DC1 (illustrative)</figcaption></figure>
