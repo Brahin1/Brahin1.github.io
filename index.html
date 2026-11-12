@@ -92,6 +92,18 @@ html{scroll-padding-top:var(--barh,120px)}
 @media (max-width:900px){.did.grid2{grid-template-columns:minmax(0,1fr)}}
 figure.team{margin-top:40px}
 
+
+/* who-I-am card (hero and contact) */
+.idcard{display:flex;align-items:flex-start;gap:16px;margin-top:22px}
+.idcard img{width:80px;height:80px;border-radius:50%;object-fit:cover;flex:none;border:2px solid rgba(242,245,240,.55)}
+.idcard ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:15.5px;line-height:1.35;color:#E3EBE5}
+.idcard li{display:flex;gap:9px;align-items:flex-start}
+.idcard svg{flex:none;width:16px;height:16px;margin-top:2px;fill:none;stroke:var(--gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.idcard b{color:var(--silk);font-weight:600}
+#contact .idcard{margin-top:30px}
+/* wide figures: swipe sideways on small screens */
+figure .frame.scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain;scrollbar-width:none}
+figure .frame.scroll::-webkit-scrollbar{display:none}
 /* focus effect: neighbouring sections tilt away like a drum and fade, the current one sits flat */
 .paused,.paused *{animation-play-state:paused!important}
 .wb{backface-visibility:hidden}
@@ -176,7 +188,8 @@ h2{font:400 clamp(24px,3.4vw,36px)/1.2 var(--f-display);margin:0;letter-spacing:
 @media (max-width:640px){.tb{grid-template-columns:repeat(2,minmax(0,1fr))}.tb div:nth-child(4n+1){border-left:1px solid var(--ink)}.tb div:nth-child(odd){border-left:0}.tb div:nth-child(n+3){border-top:1px solid var(--ink)}}
 
 figure{margin:0;display:grid;gap:10px;min-width:0}
-figure .frame{border:1px solid var(--rule);background:#FBFCFA;border-radius:3px;overflow:hidden}
+figure .frame{border:1px solid rgba(20,32,25,.22);background:#FBFCFA;border-radius:8px;overflow:hidden;box-shadow:0 0 0 3px rgba(15,74,45,.07),0 1px 2px rgba(10,30,20,.06),0 10px 24px -14px rgba(10,30,20,.35);transition:box-shadow .25s,border-color .25s}
+figure .frame:hover{border-color:rgba(15,74,45,.45);box-shadow:0 0 0 3px rgba(15,74,45,.12),0 1px 2px rgba(10,30,20,.06),0 14px 30px -14px rgba(10,30,20,.4)}
 figcaption{font-size:15px;color:var(--ink-2);max-width:60ch}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .diag{display:block;width:100%;height:auto}
@@ -305,7 +318,13 @@ footer span:last-child{border-right:0}
     <div>
       <h1>Brahin Uddin</h1>
       <p class="lede">I design digital hardware in SystemVerilog, verify it against reference models, and run it on FPGAs.</p>
-      <p class="seek">Electrical Engineering at Rutgers, class of 2028. Open to Summer and Fall 2027 internships in FPGA, RTL, ASIC and verification.</p>
+      <div class="idcard"><img src="assets/headshot.jpg" width="80" height="80" alt="Headshot of Brahin Uddin">
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg><span><b>Rutgers University–New Brunswick</b> · B.S. Electrical Engineering, minor in Computer Science · Class of 2028</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><span>Honors College · Engineering Honors Academy · Dean's List</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>New Brunswick, NJ</span></li>
+        </ul></div>
+      <p class="seek">Open to Summer and Fall 2027 internships in FPGA, RTL, ASIC and verification.</p>
       <p class="seek ind"><b>Plus industry experience:</b> a summer at <a href="#crusoe">Crusoe</a> working with reliability, controls and commissioning teams on AI data center infrastructure, from the rack up to site power.</p>
       <div class="actions">
         <a class="btn pad" href="resume.pdf" target="_blank" rel="noopener">Open resume (PDF)</a>
@@ -524,7 +543,6 @@ footer span:last-child{border-right:0}
 </g>
 </svg></div>
         <figcaption>The receive path, wire to record, with each module's resource use and the time the last byte of an Add Order reaches each stage.</figcaption>
-        <p class="hint">Scroll sideways to see the whole diagram.</p>
       </figure>
       <figure><div class="frame scroll"><img class="shot wide" src="assets/decoder-wave-gtkwave.png" width="1800" height="400" alt="GTKWave trace of the decoder. RGMII nibbles and GMII bytes of one frame arrive on the receive clock; after the last byte, done_q pulses and rec_valid goes high on the core clock, with rec_type 41 (Add Order), the stock field and the price 0012345A on the record outputs." loading="lazy" decoding="async"></div><figcaption>Simulation waveform (cocotb + Icarus, viewed in GTKWave): one Add Order arriving on the RGMII pins and its decoded record leaving 72.8 ns later.</figcaption></figure>
       <figure><div class="frame"><img class="shot" src="assets/vivado-device-legend.png" width="3309" height="1452" alt="Vivado device view of the placed design on the Zynq-7020. The feed handler's cells sit in a compact block near the center-left of the fabric, colored by module: magenta RGMII capture, yellow MAC, green UDP parser, blue MoldUDP64, purple ITCH decoder, orange record queue, red AXI4-Lite registers. Green routing fans out to the ARM processor system on the left." loading="lazy" decoding="async"></div><figcaption>Where the design sits on the Zynq-7020, one color per module.</figcaption></figure>
@@ -694,7 +712,6 @@ footer span:last-child{border-right:0}
 <text x="1314" y="790" class="rp-ref">Drawn by</text><text x="1314" y="809" class="rp-fn" style="fill:#142019">B. Uddin, Rev A</text>
 </svg></div>
         <figcaption>Full forwarding into EX; the pipeline only stalls when an instruction needs a value that isn't ready yet.</figcaption>
-        <p class="hint">Scroll sideways to see the whole diagram.</p>
       </figure>
       <figure class="native"><div class="frame scroll"><img class="shot wide" src="assets/riscv-wave-gtkwave.png" width="1010" height="400" alt="GTKWave trace of the core. The load_use signal goes high for one cycle while the ID-stage PC holds, then the forwarding selects fwd_a and fwd_b switch to pick values from the EX/MEM and MEM/WB stages, and instructions retire on rvfi_valid." loading="lazy" decoding="async"></div><figcaption>Verilator waveform of a load-use stall: add t3 waits one cycle behind lw t2, then takes the loaded value from MEM/WB; the next two instructions forward from EX/MEM and MEM/WB.</figcaption></figure>
     </div>
@@ -817,7 +834,6 @@ footer span:last-child{border-right:0}
 <text x="358" y="796" class="ng-ref">Drawn by</text><text x="358" y="818" class="ng-wl" style="font-size:15px">B. Uddin, Rev A</text>
 </svg></div>
       <figcaption>The risk-check RTL: four checks in two pipeline stages, with every limit in a configuration register that the approved rule writes.</figcaption>
-      <p class="hint">Scroll sideways to see the whole diagram.</p>
     </figure>
     <figure class="team">
       <div class="frame"><img class="shot" src="assets/nanoguard-team.jpg" width="800" height="800" alt="The six-person NanoGuard team standing outdoors on a sunny campus plaza in business dress. Brahin is in the center in a black suit and tie holding a notebook; the other members' faces are blurred." loading="lazy" decoding="async"></div>
@@ -865,7 +881,6 @@ footer span:last-child{border-right:0}
       <figure>
         <div class="frame scroll"><img class="shot wide" src="assets/aerobin-schematic.svg" width="1080" height="559" alt="The AeroBin V1 schematic. Top row, left to right: the USB-C connector with 5.1 kilohm CC resistors and a USBLC6 ESD protector on the data lines, the battery connector and MCP73831 Li-Po charger, and the RT9080 3.3 volt regulator. Below: the status LED, a 1 megohm divider for battery sensing, the VL53L1CX time-of-flight sensor on I2C with its interrupt and shutdown lines, the ESP32-C3-MINI-1 module with BOOT and EN buttons, and a row of seven test points." loading="lazy" decoding="async"></div>
         <figcaption>The V1 schematic: USB-C input and ESD protection, Li-Po charger, 3.3 V regulator, ESP32-C3 module, time-of-flight sensor, battery sensing and test points. <a href="assets/aerobin-schematic-full.svg" target="_blank" rel="noopener">Open the full sheet</a>.</figcaption>
-        <p class="hint">Scroll sideways to see the whole schematic.</p>
       </figure>
       </div>
   </div>
@@ -1026,7 +1041,6 @@ footer span:last-child{border-right:0}
 <text x="1294" y="754" class="dc-ref">Drawn by</text><text x="1294" y="776" class="dc-wl" style="font-size:15px">B. Uddin, Rev A</text>
 </svg></div>
         <figcaption>What an asset map covers: a generic power and cooling path, where every box becomes a row with a parent.</figcaption>
-        <p class="hint">Scroll sideways to see the whole diagram.</p>
       </figure>
       <figure>
         <div class="frame scroll"><svg class="art" role="img" aria-label="Illustration of telemetry becoming an alarm. Left: a switchboard cabinet labeled SWBD-A1 with copper busbars for phases A, B and C, a main breaker, and a current transformer ring around phase A wired to a power meter reading 412 amps. A cable carries Modbus data to a PLC on a DIN rail with a power supply, a CPU showing a limit of 400 amps, and I/O modules with blinking LEDs. An Ethernet and MQTT cable runs to a SCADA monitor showing the tag path Crusoe/SITE/UNIT-01/SWBD/A1/Current_PhA and a 15-minute trend line that rises past a dashed 400-amp high limit, with a red alarm banner reading Current high on phase A, 412 A, which opens a work order. Names and values are made up." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 720" font-family="'Barlow Semi Condensed','Barlow',sans-serif">
@@ -1164,7 +1178,6 @@ footer span:last-child{border-right:0}
 <text x="890" y="652" class="vz-lab">3  Alarm</text><text x="890" y="672" class="vz-sm">The alarm carries the asset's standard path, so an operator anywhere</text><text x="890" y="690" class="vz-sm">can open the matching maintenance record without asking what it's called.</text>
 </svg></div>
         <figcaption>From a current reading to an alarm: a current transformer feeds a meter, the PLC checks the limit, and the SCADA alarm carries the asset's standard name, so it opens the right maintenance record. Names and values are made up.</figcaption>
-        <p class="hint">Scroll sideways to see the whole drawing.</p>
       </figure>
       <figure>
         <div class="frame scroll"><svg class="art" role="img" aria-label="Illustrative digital-twin cross-section of a data hall rendered as a temperature map. CRAH cooling units on both walls push cold air, shown blue, into a raised-floor plenum; it rises through perforated tiles into two contained cold aisles, passes through four server racks where it shifts from blue to red, collects in a hot central aisle and hot zones by the walls, shown orange and red, and returns through a ceiling plenum to the CRAH units. Dashed white lines trace the airflow loops, and a color bar maps blue at 18 degrees Celsius to red at 45. A note says the twin predicts rack inlet temperatures and suggests CRAH setpoints, and that Brahin evaluated ML and RL approaches for that predictive layer." xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" font-family="'Barlow Semi Condensed','Barlow',sans-serif">
@@ -1385,7 +1398,6 @@ footer span:last-child{border-right:0}
 <text x="700" y="654" class="vz-lab">What the twin does with this</text><text x="700" y="676" class="vz-sm">Predicts rack inlet temperatures as load changes, and suggests CRAH supply</text><text x="700" y="694" class="vz-sm">setpoints. I evaluated ML and RL approaches for that predictive layer.</text>
 </svg></div>
         <figcaption>What a digital twin models: cold air from the CRAH units runs under the raised floor, rises through the cold aisles, heats up through the servers and returns through the ceiling. Illustrative, not site data.</figcaption>
-        <p class="hint">Scroll sideways to see the whole drawing.</p>
       </figure>
     </div>
     <p class="sub" style="margin-top:20px">The drawings are generic illustrations: no site photos, layouts or internal data.</p>
@@ -1496,6 +1508,12 @@ footer span:last-child{border-right:0}
       <code id="addr">ubrahin17@gmail.com</code>
       <button class="btn pad" id="copy" type="button">Copy email</button>
     </div>
+    <div class="idcard"><img src="assets/headshot.jpg" width="80" height="80" alt="Headshot of Brahin Uddin">
+        <ul>
+          <li><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg><span><b>Rutgers University–New Brunswick</b> · B.S. Electrical Engineering, minor in Computer Science · Class of 2028</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><span>Honors College · Engineering Honors Academy · Dean's List</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>New Brunswick, NJ</span></li>
+        </ul></div>
     <div class="more">
       <a href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
       <a href="https://www.linkedin.com/in/brahin-uddin" target="_blank" rel="noopener">LinkedIn</a>
